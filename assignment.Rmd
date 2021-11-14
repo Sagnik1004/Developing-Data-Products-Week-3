@@ -1,0 +1,25 @@
+---
+title: "Developing Data Products Week 3 assignment"
+author: "Sagnik Chakravarty"
+date: "14/11/2021"
+output: ioslides_presentation
+---
+
+## Week 3:
+
+We build an interactive graph using plotly.
+
+Dataset: we use the mtcars dataset. We will be plotting a box plot to visualize the hp variable for each of the different levels of the factor variable cyl. 
+
+```{r echo=FALSE, message=FALSE}
+library(plotly)
+
+```
+
+
+## The plot
+```{r echo=FALSE, message=FALSE, warning=FALSE}
+plot_ly(data = mtcars, x= ~cyl, y= ~hp, type = 'box', color= factor(mtcars$cyl))
+```
+
+## Thank You
